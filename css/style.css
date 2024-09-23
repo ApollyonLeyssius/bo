@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+article{
+    width: 60vw;
+    margin: 0 auto; 
+    padding: 40px;
+    background: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1{
+    font-size: 250%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    
+}
+
+body{
+    background: green;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+img{
+    width: 100%;
+    margin-bottom: 40px;
+    border-radius: 500px;
+    
+}
+
+p{
+    margin-bottom: 40px;
+}
+
+button{
+    color:blue;
+}
+
+table{
+    border-collapse: collapse;
+}
