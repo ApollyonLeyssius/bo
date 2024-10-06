@@ -107,3 +107,9 @@ button{
 table{
     border-collapse: collapse;
 }
+
+footer > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
