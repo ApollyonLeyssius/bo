@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact</title>
+</head>
+<body id="ody" class="">
+    <Header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="tweedeopdracht.html">Tweede opdracht</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="knop" onclick="dark()" id="butt">Dark mode</button></li>
+            </ul>
+        </nav>
+    </Header> 
+    <h1 id="artic">Stel je voor...</h1>
+    <article id="artic" class="">
+        <h2>
+            Inhoud
+        </h2>
+        <p>
+            <ol>
+                <li>Mijn (tech) skills aan het einde van de opleiding</li>
+                <li>Mijn soft skills straks</li>
+                <li>Wat wil ik bereikt hebben: producten die ik heb gemaakt / kan maken.</li>
+                <li> Na het Ma! Opleiding hierna? Of meteen werken?</li>
+                <li>Mijn droombaan dagboek</li>
+                <li>Een andere droom</li>
+            </ol>
+        </p>
+    </article>
+<article id="artic" class="">
+        <h2>My Tech Skills</h2>
+        <div class="grids">
+        <p class="tech">
+            Ik kan gebruik maken van C# <br>
+            Ik kan Games maken in Unity <br>
+            Ik kan basis sites maken
+        </p>
+        <button id="myBtn" class="proj modal">
+            Link naar andere projecten
+        </button>
+    </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Link naar <a href="https://github.com/ApollyonLeyssius">Github</a><br>
+                Link naar Skill <a href="https://38302.hosts2.ma-cloud.nl/blog/">website</a><br>
+                Link naar <a href="https://38302.hosts2.ma-cloud.nl/dieren/">Opendag opdracht</a></p>
+            </div>
+          
+          </div>
+    </article>
+    <article id="artic" class=" ">
+        <h2>
+           Mijn Soft Skills 
+        </h2>
+        <div class="grids">
+        <p class="tech">
+            Ik ben socialer. <br>
+            Ik Kan beter samenwerken. <br>
+            Ik ben goed in contact leggen. <br>
+        </p>
+        <img class="softie" src="img/pasted image 0.png" alt="Een foto van verschillende softskills.">
+    </div>
+    </article>
+    <article  id="artic" class=" ">
+        <h2>
+            Wat wil ik bereiken?
+        </h2>
+        <div class="grids">
+            <img src="img/csharp-console-calculator-switch-code.png" alt="Code van C# die verder niks ergens meer te maken heeft">
+            <p class="tech">
+                Ik wil goed zijn in Java, C# en de basis van HTML, CSS en javascript. <br>
+                Ik wil goed games kunnen maken. <br>
+                Ik wil goed in een team kunnen werken. 
+            </p>
+        </div>
+    </article>
+    <article id="artic" class="">
+        <h2>Na het Ma!</h2>
+        <div class="grids">
+            <p class="techs">
+                Na het deze opleiding zou ik misschien nog naar de HBO willen doen voor game design.
+                Dat is omdat ik graag ook de verhalen van games wil schrijven.
+                Misschien ga ik tijdens die opleiding wel ergens werken of misschien een bedrijf starten met klasgenoten.
+                We zouden dan games maken met elkaar. 
+                We zouden ook iemand van de game artists moeten hebben in ons team.
+                Een ander alternatief is dat ik na mijn stage die ik in Japan wil doen klaar ben ik daar ga wonen.
+                Misschien verhuis ik dan wel na een paar jaar terug naar Nederland.
+            </p>
+            <img src="img/toekomst-visie-640x425.png" alt="Een weg met jaartallen.">
+        </div>
+    </article>
+        <article id="artic" class="">
+            <h2>Mijn droom dagboek</h2>
+            <div class="grids">
+                <img class="klein" src="img/550x751.jpg" alt="Foto van een dagboek">
+                <p>
+                    Om 10:00 klok ik in. <br>
+                    Om 11:00 ga ik een vergadering in voor ons project. <br>
+                    Om 12:00 ga ik verder aan het werk. <br>
+                    Om 13:00 heb ik een lunch pauze. <br>
+                    Om 13:30 ga ik verder met werken. <br>
+                    Om 18:00 klok ik uit. 
+                </p>
+            </div>
+        </article>
+        <article id="artic" class="">
+            <h2>Een andere droom</h2>
+            <div class="grids">
+                <p>
+                    Een andere droom van mij is Het schrijven van game verhalen of gewoon verhalen in het algemeen.
+                    Ik heb veel spellen gespeelt met een verhaal die echt goed zijn, beter dan elke film en serie ooit.
+                    Ik zou ook ooit zo iets willen maken.
+                    Dat is een andere droom van mij.
+                </p>
+                <img src="img/image.png" alt="Een pen en een schrift met woorden er op">
+            </div>
+        </article>
+        <footer>
+            <p class="foot">
+                Julian van der leek
+            </p>
+        </footer>
+</body>
+    <script>
+        function dark(){
+        let mode = document.getElementById("artic");
+        mode.classList.toggle ("dark");
+        let twee = document.getElementById("ody");
+        twee.classList.toggle ("darker");
+        console.log("Test");
+        }
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</html>
+
